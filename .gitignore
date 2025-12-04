@@ -13,3 +13,24 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Fichiers générés par Android Studio
+.gradle/
+.idea/
+*.iml
+local.properties
+.build/
+.cxx/
+
+# Fichiers de build
+build/
+app/build/
+captures/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de cache
+*.log
+*.swp
+*.swo
