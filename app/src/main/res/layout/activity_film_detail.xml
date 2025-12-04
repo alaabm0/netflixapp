@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.filmcatalogapp.ui.FilmDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_film_poster"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/film_placeholder"
+            android:contentDescription="@string/film_poster"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_film_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titre du Film"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_film_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Année: 2023"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_film_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genre: Action"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_film_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Durée: 120 min"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_film_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description du film..."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btn_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter aux Favoris"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

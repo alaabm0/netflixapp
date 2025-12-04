@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black"
+    android:padding="24dp"
+    tools:context="com.example.filmcatalogapp.ui.MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/film_placeholder"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Film Catalog"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btn_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir le Catalogue"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes Favoris"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="@color/dark_gray"
+        android:textColor="@color/white" />
+
+</LinearLayout>
